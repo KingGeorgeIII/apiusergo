@@ -16,7 +16,8 @@ type User struct {
 
 func getUsers() []*User {
 	// Open up our database connection.
-	db, err := sql.Open("mysql", "tester:secret@tcp(db:3306)/test")
+	//db, err := sql.Open("mysql", "tester:secret@tcp(db:3306)/test")
+	db, err := sql.Open("mysql", "bf5a864d146ff2:ce9a0396@tcp(us-cdbr-east-06.cleardb.net:3306)/heroku_34cae421b7c6cf9")
 
 	// if there is an error opening the connection, handle it
 	if err != nil {
